@@ -21,10 +21,9 @@ screen.onkey(snake.down,'Down')
 screen.onkey(snake.right ,'Right')
 screen.onkey(snake.left ,'Left')
 
-game_is_on = True
-while game_is_on:
+while True:
     screen.update() #turning turtle animation on, refreshing screen
-    time.sleep(0.1) #delay refreshing screen 
+    time.sleep(0.09) #delay refreshing screen 
     snake.move()
 
     #Detect collision with food
@@ -43,16 +42,5 @@ while game_is_on:
         if snake.head.distance(segment) < 10:
             score_board.reset()
             snake.reset()
-
- 
-    
-
-
-
-
-
-
-
-
 
 screen.exitonclick()

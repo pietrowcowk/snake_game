@@ -2,6 +2,10 @@ from turtle import Turtle
 ALLIGMENT = 'center'
 FONT = ('Verdana', 14, 'normal')
 
+#creating file to save highscore
+f = open('data.txt', 'w')
+f.write('0')
+f.close()
 
 class Scoreboard(Turtle):
 
